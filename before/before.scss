@@ -1,0 +1,11 @@
+$background: black;
+$color: white;
+$font-family: Arial, sans-serif;
+
+body {
+  background-color: $background;
+  font: {
+    family: $font-family;
+  }
+  color: $color;
+}
