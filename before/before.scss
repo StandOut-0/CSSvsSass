@@ -47,7 +47,7 @@ div {
     > h2 {
       width: percentage(ceil(0.5)); //% , 올림
       background: white;
-      font-size: round(1.5rem); //반올림
+      font-size: round(floor(1.5rem)); //반올림, 잘사
       color: map-get($palette, text-color);
       margin-bottom: 10px;
     }
