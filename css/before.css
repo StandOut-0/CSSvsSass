@@ -47,6 +47,9 @@ div.card .btn_red {
     display: none;
   }
 }
+div.card p {
+  font-size: 20px;
+}
 div.card .btn_0 {
   width: 5rem;
   border-radius: 10px;

@@ -96,6 +96,14 @@ div {
       border: $borderWidth solid map-get($palette, secondary-color);
     }
 
+    // @function & @return
+    @function hasReturn($num) {
+      @return $num * 10px;
+    }
+    p {
+      font-size: hasReturn(2);
+    }
+
     // 반복문
     @for $i from 0 through 2 {
       .#{$btn_name}_#{$i} {
