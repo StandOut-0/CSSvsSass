@@ -12,6 +12,9 @@ $light-text-color: #666; //전역
 $boolean: false;
 $width: 301px;
 
+// interpolation
+$btn_name: btn;
+
 // 카드 스타일
 .card {
   width: ($width + 100 - 50) * 1.5;
@@ -44,7 +47,7 @@ $width: 301px;
   }
 
   // 중첩된 선택자를 사용하여 .btn 스타일 정의
-  .btn {
+  .#{$btn_name} {
     background-color: map-get($palette, primary-color);
     color: white;
     padding: 10px 20px;
