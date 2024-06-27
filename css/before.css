@@ -70,12 +70,15 @@ div.card .btn_2 {
 }
 div.card .rainbow_0 {
   color: red;
+  margin: 10px 10px 0px;
 }
 div.card .rainbow_1 {
   color: orange;
+  margin: 10px 10px 0px;
 }
 div.card .rainbow_2 {
   color: green;
+  margin: 10px 10px 0px;
 }
 div.card .btn_2 {
   font-size: 4rem;

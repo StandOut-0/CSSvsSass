@@ -114,9 +114,24 @@ div {
         @include btn_borderStyle(($i + 1) * 5px);
       }
     }
-    @each $num, $eachColor in (0: red, 1: orange, 2: green) {
+
+    //join() 리스트 + 리스트
+    $eachColorList: (
+      0: red,
+      1: orange,
+    );
+    $eachColorList: join(
+      $eachColorList,
+      (
+        2: green,
+      )
+    );
+    @each $num, $eachColor in ($eachColorList) {
       .#{'rainbow_' + $num} {
         color: $eachColor;
+
+        // append() 리스트 + 요소 & space 쉼표제거
+        margin: append((10px, 10px), 0px, space);
       }
     }
     $j: 2;
