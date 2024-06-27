@@ -3,8 +3,10 @@ $palette: (
   primary-color: #007bff,
   secondary-color: #0056b3,
   text-color: #333,
-  light-text-color: #666,
 );
+
+// 전역, 지역변수
+$light-text-color: #666; //전역
 
 // 카드 스타일
 .card {
@@ -25,8 +27,9 @@ $palette: (
 
   // 중첩된 선택자를 사용하여 p 스타일 정의
   p {
+    $light-text-color: red; //지역
     font-size: 1.2rem;
-    color: map-get($palette, light-text-color);
+    color: $light-text-color;
     line-height: 1.5;
   }
 
