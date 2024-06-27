@@ -113,6 +113,8 @@ div {
         width: 5rem +1rem * $i;
         // hue 색상변경
         background: adjust-hue(map-get($palette, secondary-color), 5% * $i);
+        // saturate desaturate 채도변경
+        box-shadow: 7px 7px 7px desaturate(red, 50% * $i);
         @include btn_borderStyle(($i + 1) * 5px);
       }
     }

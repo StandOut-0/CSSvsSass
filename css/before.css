@@ -56,18 +56,21 @@ div.card p {
 div.card .btn_0 {
   width: 5rem;
   background: #0056b3;
+  box-shadow: 7px 7px 7px red;
   border-radius: 10px;
   border: 5px solid #0056b3;
 }
 div.card .btn_1 {
   width: 6rem;
   background: #0047b3;
+  box-shadow: 7px 7px 7px #bf4040;
   border-radius: 10px;
   border: 10px solid #0056b3;
 }
 div.card .btn_2 {
   width: 7rem;
   background: #0038b3;
+  box-shadow: 7px 7px 7px gray;
   border-radius: 10px;
   border: 15px solid #0056b3;
 }
