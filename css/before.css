@@ -5,6 +5,7 @@ body {
 
 div:before {
   content: "Before flag";
+  color: rgba(102, 102, 102, 0.5);
 }
 div.card {
   width: 526.5px;

@@ -28,6 +28,8 @@ div {
   &:before {
     //ampersand 부모요소를 참조
     content: $content;
+    //투명도 조절 opacify transparentize
+    color: transparentize($light-text-color, 0.5);
   }
   &.card {
     width: ($width + 100 - 50) * 1.5;
