@@ -70,10 +70,19 @@ div {
       }
     }
 
-    // 상속
+    // 상속, @media 안에서 @extend를 쓰면 ERROR
     .#{$btn_name + '_red'} {
       @extend .#{$btn_name};
       color: map-get($palette, warning-color);
+    }
+    .block_important {
+      display: block !important;
+    }
+    @media print {
+      * {
+        @extend .block_important;
+        display: none;
+      }
     }
   }
 }
