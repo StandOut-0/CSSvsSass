@@ -40,7 +40,7 @@ div {
     // inline if문
     background-color: if($boolean == true, blue, #f0f0f0);
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: abs(-5px); // 절대값
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 
