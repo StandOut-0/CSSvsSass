@@ -1,4 +1,4 @@
-.card {
+div.card {
   width: 526.5px;
   padding: 20px;
   background-color: #f0f0f0;
@@ -7,17 +7,17 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
-.card h2 {
+div.card > h2 {
   font-size: 1.5rem;
   color: #333;
   margin-bottom: 10px;
 }
-.card p {
+div.card p {
   font-size: 1.2rem;
   color: red;
   line-height: 1.5;
 }
-.card .btn {
+div.card .btn {
   background-color: #007bff;
   color: white;
   padding: 10px 20px;
@@ -25,7 +25,7 @@
   border-radius: 5px;
   cursor: pointer;
 }
-.card .btn:hover {
+div.card .btn:hover {
   background-color: #0056b3;
 }
 

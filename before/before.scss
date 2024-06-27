@@ -15,49 +15,49 @@ $width: 301px;
 // interpolation
 $btn_name: btn;
 
-// 카드 스타일
-.card {
-  width: ($width + 100 - 50) * 1.5;
-  @if $width <= 300px {
-    padding: 0px;
-  } @else if ($width <= 310px) and ($boolean == true) {
-    padding: 5px;
-  } @else {
-    padding: 20px;
-  }
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-
-  // 중첩된 선택자를 사용하여 h2 스타일 정의
-  h2 {
-    font-size: 1.5rem;
-    color: map-get($palette, text-color);
-    margin-bottom: 10px;
-  }
-
-  // 중첩된 선택자를 사용하여 p 스타일 정의
-  p {
-    $light-text-color: red; //지역
-    font-size: 1.2rem;
-    color: $light-text-color;
-    line-height: 1.5;
-  }
-
-  // 중첩된 선택자를 사용하여 .btn 스타일 정의
-  .#{$btn_name} {
-    background-color: map-get($palette, primary-color);
-    color: white;
-    padding: 10px 20px;
-    border: none;
+// ampersand
+div {
+  &.card {
+    //부모요소를 참조
+    width: ($width + 100 - 50) * 1.5;
+    @if $width <= 300px {
+      padding: 0px;
+    } @else if ($width <= 310px) and ($boolean == true) {
+      padding: 5px;
+    } @else {
+      padding: 20px;
+    }
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 
-    // &:hover를 사용하여 .btn:hover 스타일 정의
-    &:hover {
-      background-color: map-get($palette, secondary-color);
+    > h2 {
+      font-size: 1.5rem;
+      color: map-get($palette, text-color);
+      margin-bottom: 10px;
+    }
+
+    p {
+      $light-text-color: red; //지역
+      font-size: 1.2rem;
+      color: $light-text-color;
+      line-height: 1.5;
+    }
+
+    .#{$btn_name} {
+      background-color: map-get($palette, primary-color);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+
+      // &:hover를 사용하여 .btn:hover 스타일 정의
+      &:hover {
+        background-color: map-get($palette, secondary-color);
+      }
     }
   }
 }
