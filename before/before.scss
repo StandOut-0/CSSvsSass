@@ -49,7 +49,7 @@ div {
       background: white;
       font-size: round(floor(1.5rem)); //반올림, 잘사
       color: map-get($palette, text-color);
-      margin-bottom: 10px;
+      margin-bottom: unquote('10px'); // 따옴표 제거
     }
 
     p {
