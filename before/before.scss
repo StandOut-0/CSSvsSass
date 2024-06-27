@@ -15,8 +15,15 @@ $width: 301px;
 // interpolation
 $btn_name: btn;
 
+// !default flag 초기값
+$content: 'Before flag';
+$content: 'After flag' !default; //이미 할당됬다면 먹지않는다.
+
 // ampersand
 div {
+  &:before {
+    content: $content;
+  }
   &.card {
     //부모요소를 참조
     width: ($width + 100 - 50) * 1.5;

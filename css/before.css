@@ -1,3 +1,6 @@
+div:before {
+  content: "Before flag";
+}
 div.card {
   width: 526.5px;
   padding: 20px;
