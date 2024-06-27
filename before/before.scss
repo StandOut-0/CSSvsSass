@@ -90,10 +90,17 @@ div {
       }
     }
 
+    // @mixin & @include
+    @mixin btn_borderStyle($borderWidth) {
+      border-radius: 10px;
+      border: $borderWidth solid map-get($palette, secondary-color);
+    }
+
     // 반복문
     @for $i from 0 through 2 {
       .#{$btn_name}_#{$i} {
         width: 5rem +1rem * $i;
+        @include btn_borderStyle(($i + 1) * 5px);
       }
     }
     @each $num, $eachColor in (0: red, 1: orange, 2: green) {
