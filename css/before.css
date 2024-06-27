@@ -16,7 +16,7 @@ div.card {
   margin-bottom: 20px;
 }
 div.card > h2 {
-  width: 50%;
+  width: 100%;
   background: white;
   font-size: 2rem;
   color: #333;
