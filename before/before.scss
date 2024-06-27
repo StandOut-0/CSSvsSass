@@ -55,8 +55,9 @@ div {
 
     p {
       $light-text-color: map-get($palette, warning-color); //지역
+
       font-size: 1.2rem;
-      color: $light-text-color;
+      color: darken($light-text-color, 20%); //휘도 변경 lighten darken
       line-height: 1.5;
     }
 
