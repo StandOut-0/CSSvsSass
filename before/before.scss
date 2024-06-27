@@ -4,6 +4,7 @@
 $palette: (
   primary-color: #007bff,
   secondary-color: #0056b3,
+  warning-color: red,
   text-color: #333,
 );
 
@@ -21,13 +22,13 @@ $btn_name: btn;
 $content: 'Before flag';
 $content: 'After flag' !default; //이미 할당됬다면 먹지않는다.
 
-// ampersand
+// nesting
 div {
   &:before {
+    //ampersand 부모요소를 참조
     content: $content;
   }
   &.card {
-    //부모요소를 참조
     width: ($width + 100 - 50) * 1.5;
     @if $width <= 300px {
       padding: 0px;
@@ -49,7 +50,7 @@ div {
     }
 
     p {
-      $light-text-color: red; //지역
+      $light-text-color: map-get($palette, warning-color); //지역
       font-size: 1.2rem;
       color: $light-text-color;
       line-height: 1.5;
@@ -67,6 +68,12 @@ div {
       &:hover {
         background-color: map-get($palette, secondary-color);
       }
+    }
+
+    // 상속
+    .#{$btn_name + '_red'} {
+      @extend .#{$btn_name};
+      color: map-get($palette, warning-color);
     }
   }
 }
