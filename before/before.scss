@@ -8,10 +8,19 @@ $palette: (
 // 전역, 지역변수
 $light-text-color: #666; //전역
 
+// 연산자 사용하기
+$width: 311px;
+
 // 카드 스타일
 .card {
-  width: 300px;
-  padding: 20px;
+  width: ($width + 100 - 50) * 1.5;
+  @if $width <= 300px {
+    padding: 0px;
+  } @else if $width <= 310px {
+    padding: 5px;
+  } @else {
+    padding: 20px;
+  }
   background-color: #f0f0f0;
   border: 1px solid #ccc;
   border-radius: 5px;
