@@ -12,7 +12,8 @@ $palette: (
 $light-text-color: #666; //전역
 
 // 연산자 사용하기
-$boolean: false;
+$booleanValue: (true, false);
+$boolean: nth($booleanValue, 2); // n번째 값 가져오기
 $width: 301px;
 
 // interpolation
