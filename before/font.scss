@@ -1,0 +1,7 @@
+$font-size: 16px !default;
+$line-height: 1.5 !default;
+$font-family: 'fantasy', 'Arial', sans-serif !default;
+
+body {
+  font: #{$font-size}/ $line-height $font-family;
+}
