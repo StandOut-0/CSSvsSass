@@ -1,22 +1,51 @@
-/* Error: From line 78, column 5 of before\before.scss: 
- *    ╷
- * 78 │     .block_important {
- *    │     ^^^^^^^^^^^^^^^^^
- *    ╵
- * You may not @extend selectors across media queries.
- *    ,
- * 83 |         @extend .block_important;
- *    |         ^^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   before\before.scss 83:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: From line 78, column 5 of before\\before.scss: \a    \2577 \a 78 \2502      .block_important {\d\a    \2502      ^^^^^^^^^^^^^^^^^\a    \2575 \aYou may not @extend selectors across media queries.\a    \2577 \a 83 \2502          @extend .block_important;\d\a    \2502          ^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   before\\before.scss 83:9  root stylesheet";
+body {
+  font: 16px/1.5 "fantasy", "Arial", sans-serif;
 }
+
+div:before {
+  content: "Before flag";
+}
+div.card {
+  width: 526.5px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+div.card > h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+div.card p {
+  font-size: 1.2rem;
+  color: red;
+  line-height: 1.5;
+}
+div.card .btn, div.card .btn_red {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+div.card .btn:hover, div.card .btn_red:hover {
+  background-color: #0056b3;
+}
+div.card .btn_red {
+  display: block !important;
+  margin: 0.5rem 0;
+}
+div.card .btn_red {
+  color: red;
+}
+@media print {
+  div.card * {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=before.css.map */

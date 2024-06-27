@@ -70,17 +70,21 @@ div {
       }
     }
 
+    // placeholder selectors
+    %block_important {
+      display: block !important;
+      margin: 0.5rem 0;
+    }
+
     // 상속, @media 안에서 @extend를 쓰면 ERROR
     .#{$btn_name + '_red'} {
       @extend .#{$btn_name};
+      @extend %block_important;
       color: map-get($palette, warning-color);
-    }
-    .block_important {
-      display: block !important;
     }
     @media print {
       * {
-        @extend .block_important;
+        // @extend .block_important;
         display: none;
       }
     }
