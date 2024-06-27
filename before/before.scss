@@ -89,5 +89,12 @@ div {
         display: none;
       }
     }
+
+    // 반복문
+    @for $i from 0 through 2 {
+      .#{$btn_name}_#{$i} {
+        width: 5rem +1rem * $i;
+      }
+    }
   }
 }

@@ -47,5 +47,14 @@ div.card .btn_red {
     display: none;
   }
 }
+div.card .btn_0 {
+  width: 5rem;
+}
+div.card .btn_1 {
+  width: 6rem;
+}
+div.card .btn_2 {
+  width: 7rem;
+}
 
 /*# sourceMappingURL=before.css.map */
