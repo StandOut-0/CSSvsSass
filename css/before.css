@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font: 16px/1.5 "fantasy", "Arial", sans-serif;
 }
@@ -80,5 +81,7 @@ div.card .btn_2 {
 div.card .btn_1 {
   font-size: 2rem;
 }
+
+/* 한줄 주석과 다르게 멀티 주석은 css에서 남아있다. */
 
 /*# sourceMappingURL=before.css.map */
