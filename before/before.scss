@@ -60,6 +60,7 @@ div {
 
       font-size: 1.2rem;
       color: darken($light-text-color, 20%); //휘도 변경 lighten darken
+      color: shade($light-text-color, 20%); //검흰 색상혼합 tint shade
       line-height: 1.5;
     }
 

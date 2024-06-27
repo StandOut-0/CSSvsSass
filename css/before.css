@@ -26,6 +26,7 @@ div.card > h2 {
 div.card p {
   font-size: 1.2rem;
   color: #990000;
+  color: shade(red, 20%);
   line-height: 1.5;
 }
 div.card .btn, div.card .btn_red {
