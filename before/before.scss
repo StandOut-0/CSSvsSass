@@ -47,7 +47,7 @@ div {
     > h2 {
       width: percentage(0.5); //%
       background: white;
-      font-size: 1.5rem;
+      font-size: round(1.5rem); //반올림
       color: map-get($palette, text-color);
       margin-bottom: 10px;
     }
