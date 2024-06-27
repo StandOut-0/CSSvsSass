@@ -65,5 +65,11 @@ div.card .rainbow_1 {
 div.card .rainbow_2 {
   color: green;
 }
+div.card .btn_2 {
+  font-size: 4rem;
+}
+div.card .btn_1 {
+  font-size: 2rem;
+}
 
 /*# sourceMappingURL=before.css.map */

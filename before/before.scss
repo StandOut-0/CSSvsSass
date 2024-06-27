@@ -101,5 +101,12 @@ div {
         color: $eachColor;
       }
     }
+    $j: 2;
+    @while $j > 0 {
+      .#{$btn_name}_#{$j} {
+        font-size: 2rem * $j;
+      }
+      $j: $j - 1;
+    }
   }
 }
