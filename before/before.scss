@@ -1,8 +1,10 @@
-// 변수 정의
-$primary-color: #007bff;
-$secondary-color: #0056b3;
-$text-color: #333;
-$light-text-color: #666;
+// map - 변수 정의
+$palette: (
+  primary-color: #007bff,
+  secondary-color: #0056b3,
+  text-color: #333,
+  light-text-color: #666,
+);
 
 // 카드 스타일
 .card {
@@ -17,20 +19,20 @@ $light-text-color: #666;
   // 중첩된 선택자를 사용하여 h2 스타일 정의
   h2 {
     font-size: 1.5rem;
-    color: $text-color;
+    color: map-get($palette, text-color);
     margin-bottom: 10px;
   }
 
   // 중첩된 선택자를 사용하여 p 스타일 정의
   p {
     font-size: 1.2rem;
-    color: $light-text-color;
+    color: map-get($palette, light-text-color);
     line-height: 1.5;
   }
 
   // 중첩된 선택자를 사용하여 .btn 스타일 정의
   .btn {
-    background-color: $primary-color;
+    background-color: map-get($palette, primary-color);
     color: white;
     padding: 10px 20px;
     border: none;
@@ -39,7 +41,7 @@ $light-text-color: #666;
 
     // &:hover를 사용하여 .btn:hover 스타일 정의
     &:hover {
-      background-color: $secondary-color;
+      background-color: map-get($palette, secondary-color);
     }
   }
 }
