@@ -1,0 +1,13 @@
+{
+  "name": "cssvssass",
+  "version": "1.0.0",
+  "description": "CSS와 Sass의 차이를 느껴보자",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:sass": "sass before:css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
