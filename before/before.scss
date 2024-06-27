@@ -1,11 +1,45 @@
-$background: black;
-$color: white;
-$font-family: Arial, sans-serif;
+// 변수 정의
+$primary-color: #007bff;
+$secondary-color: #0056b3;
+$text-color: #333;
+$light-text-color: #666;
 
-body {
-  background-color: $background;
-  font: {
-    family: $font-family;
+// 카드 스타일
+.card {
+  width: 300px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+
+  // 중첩된 선택자를 사용하여 h2 스타일 정의
+  h2 {
+    font-size: 1.5rem;
+    color: $text-color;
+    margin-bottom: 10px;
   }
-  color: $color;
+
+  // 중첩된 선택자를 사용하여 p 스타일 정의
+  p {
+    font-size: 1.2rem;
+    color: $light-text-color;
+    line-height: 1.5;
+  }
+
+  // 중첩된 선택자를 사용하여 .btn 스타일 정의
+  .btn {
+    background-color: $primary-color;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    // &:hover를 사용하여 .btn:hover 스타일 정의
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }
 }
