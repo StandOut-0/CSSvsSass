@@ -56,5 +56,14 @@ div.card .btn_1 {
 div.card .btn_2 {
   width: 7rem;
 }
+div.card .rainbow_0 {
+  color: red;
+}
+div.card .rainbow_1 {
+  color: orange;
+}
+div.card .rainbow_2 {
+  color: green;
+}
 
 /*# sourceMappingURL=before.css.map */

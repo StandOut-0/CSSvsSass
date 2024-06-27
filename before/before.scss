@@ -96,5 +96,10 @@ div {
         width: 5rem +1rem * $i;
       }
     }
+    @each $num, $eachColor in (0: red, 1: orange, 2: green) {
+      .#{'rainbow_' + $num} {
+        color: $eachColor;
+      }
+    }
   }
 }
