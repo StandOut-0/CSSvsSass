@@ -111,6 +111,8 @@ div {
     @for $i from 0 through 2 {
       .#{$btn_name}_#{$i} {
         width: 5rem +1rem * $i;
+        // hue 색상변경
+        background: adjust-hue(map-get($palette, secondary-color), 5% * $i);
         @include btn_borderStyle(($i + 1) * 5px);
       }
     }
